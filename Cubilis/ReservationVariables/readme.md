@@ -2,9 +2,9 @@
 
 Zbiranje specifičnih vrednosti posamezne rezervacije, kot sta tip sobe in tip paketa, po želji tudi druge. Implementacija poteka v 3 korakih:
 
-* [Generiranje spremenljivke reservation](generiranje-spremenljivka-reservation) (poskrbljeno s strani Cubilisa, je nekoliko buggy)
-* [Shranjevanje željenih vrednosti](shranjevanje-željenih-vrednosti) v lokalne spremenljivke in komunikacija z dataLayer objektom
-* [Pošiljanje zbranih podatkov](pošiljanje-zbranih-podatkov) v Google Analytics
+* [Generiranje spremenljivke reservation](#generiranje-spremenljivka-reservation) (poskrbljeno s strani Cubilisa, je nekoliko buggy)
+* [Shranjevanje željenih vrednosti](#shranjevanje-željenih-vrednosti) v lokalne spremenljivke in komunikacija z dataLayer objektom
+* [Pošiljanje zbranih podatkov](#pošiljanje-zbranih-podatkov) v Google Analytics
 
 
 ## Generiranje spremenljivke reservation
