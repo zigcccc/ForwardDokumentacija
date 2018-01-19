@@ -57,7 +57,7 @@ Shranimo globalno spremeljivko `reservation` v lokalno npr `reservationData` in 
 Sledi glavni `if(){} else{}`, ki je trenutno potreben zaradi varnosti v primeru, da spremenljivka `reservation` ni dosegljiva. Preverimo:
 
 ```javascript
-if(typeof(reservationData) != undefined && reservationData != null){
+if(typeof(reservationData) != "undefined" && reservationData != null){
 	// imamo podatke spremenljivke reservation, lahko operiramo z njimi
 }
 else {
@@ -69,7 +69,7 @@ V primeru, da so se podatki spremenljivke `reservation` ustrezno naložili, nam 
 
 ```javascript
 // Določanje tipa sobe
-if(typeof(reservationData.Rooms) === undefined || reservationData.Rooms === null) {
+if(typeof(reservationData.Rooms) === "undefined" || reservationData.Rooms === null) {
 	roomType = 'Soba ni izbrana';
 }
 else {
@@ -77,7 +77,7 @@ else {
 }
 
 // Določanje tipa paketa
-if(typeof(reservationData.Packages) === undefined || reservationData.Packages === null) {
+if(typeof(reservationData.Packages) === "undefined" || reservationData.Packages === null) {
 	packageType = 'Paket ni izbran';
 }
 else {
