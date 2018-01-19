@@ -52,9 +52,7 @@ Ker ustvarjamo custom HTML, kar ne pomeni nič drugega, kot da bo GTM vstavil ne
 ``` 
 Ta tip funkcije se avtomatsko pokliče in izvede, kar tudi želimo.
 
-Nato počakamo, da se naloži vsebina strani z `document.addEventListener('DOMContentLoaded', function(){});` in vse nadaljne postopke pišemo znotraj te funkcije.
-
-Shranimo globalno spremeljivko `reservation` v lokalno npr `reservationData`. Zastavimo spremenljivki `var roomType;` in `var packageType;`, da bosta dosegljivi v področju funkcije.
+Shranimo globalno spremeljivko `reservation` v lokalno npr `reservationData` in sicer preverimo, ali je spremenljivka `reservation` na voljo na način: `var reservationData = typeof(reservation) == "undefined" ? null : reservation`. Zastavimo spremenljivki `var roomType;` in `var packageType;`, da bosta dosegljivi v področju funkcije.
 
 Sledi glavni `if(){} else{}`, ki je trenutno potreben zaradi varnosti v primeru, da spremenljivka `reservation` ni dosegljiva. Preverimo:
 
